@@ -7,10 +7,10 @@
 // splitList([]) == [[], []]
 
 
-function splitList(values: number[]):number[][] {
+function splitList(values: number[]): number[][] {
   //In case of uneven number of elements, first array will have more elements.
-  const pivot = Math.ceil(table.length/2)
-  var fpart = values.slice(0,pivot);
+  const pivot = Math.ceil(values.length / 2)
+  var fpart = values.slice(0, pivot);
   var spart = values.slice(pivot);
   //Glueing two lists can be done by using third, global one.
   //This way, both arrays will be always returned (even if empty).
