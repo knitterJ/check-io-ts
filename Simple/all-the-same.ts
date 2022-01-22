@@ -1,24 +1,17 @@
 
+//  In this mission you should check if all elements in the given Array are equal. 
+//  Input: Array.
+//  Output: Bool. 
+
+
 function allTheSame(elements: any[]): boolean {
-
-
-    if(elements.length == 1 || elements.length == 0){
-      return true;
-    }else {
-    for(let i = 0; i < elements.length; i++){
-        for(let y = 1; y < elements.length; y++){
-          // console.log(elements[i]);
-          // console.log(elements[y]);
-          if(elements[i] == elements[y]){
-            return true;
-          } else return false;
-        }
-    }
-}
+  for(let e of elements) if (e!=elements[0]) return false;
+    return true;
 }
 
 
 console.log(allTheSame([1, 1, 1]));
+console.log(allTheSame([1, 2, 1, 1]));
 console.log(allTheSame(['a','b','a']));
 console.log(allTheSame([]));
 console.log(allTheSame([1]));
