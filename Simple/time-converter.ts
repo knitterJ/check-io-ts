@@ -4,23 +4,21 @@
 
 
 function timeConverter(dayTime: string) {
-    var dayTimeNumber = parseInt(dayTime);
-    var dayTimePm = dayTimeNumber - 12;
-    var dayTimeMins = dayTime.substring(2);
+    var dayTimeHours = parseInt(dayTime);
+    var ampm = dayTimeHours >= 12 ? ' p.m.' : ' a.m.';
 
-    if (dayTimeNumber == 0) {
-        return "12" + dayTimeMins + " a.m."
-    } else if (dayTimeNumber < 11) {
-        return dayTime.substring(1) + " a.m."
-    } else if (dayTimeNumber == 11) {
-        return dayTime + ' a.m.'
-    } else if (dayTimeNumber == 12) {
-        return dayTime + ' p.m.'
-    } else return dayTimePm + dayTimeMins + ' p.m.';
+    //if the result of modulo operation equals 0 (12 and 0 case), return 12
+    dayTimeHours = dayTimeHours % 12 || 12;
+    return `${dayTimeHours}${dayTime.substring(2)}${ampm}`
+
+    // var e = 0 || {};                   e = {}
+    // var f = 0 || '' || 5;              f = 5
+    // var g = '' || 'yay' || 'boo';      g = 'yay'
+
 }
 
-console.log(timeConverter('12:30'));
 console.log(timeConverter('09:30'));
+console.log(timeConverter('12:30'));
 console.log(timeConverter('00:30'));
 console.log(timeConverter('11:30'));
 console.log(timeConverter('21:30'));
