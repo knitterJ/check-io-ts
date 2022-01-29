@@ -14,11 +14,11 @@ function countDigits(text: string): number {
 
 
 
-console.log(countDigits('hi'));
-console.log(countDigits('who is 1st here'));
-console.log(countDigits('my numbers is 2'));
+console.log(countDigits('hi')); 
+console.log(countDigits('who is 1st here')); //1 
+console.log(countDigits('my numbers is 2'));  
 console.log(countDigits('This picture is an oil on canvas ' +
  'painting by Danish artist Anna ' +
- 'Petersen between 1845 and 1910 year'));
-console.log(countDigits('5 plus 6 is'));
+ 'Petersen between 1845 and 1910 year')); //2 
+console.log(countDigits('5 plus 6 is')); 
 console.log(countDigits(''));
