@@ -7,12 +7,9 @@
 // If the final marker comes before the initial marker, then return an empty string.
 
 // Input: Three arguments. All of them are strings. The second and third arguments are the initial and final markers.
-// Output: A string. 
-
-
+// Output: A string.
 
 function betweenMarkers(text: string, begin: string, end: string): string {
-
   var firstChar = text.indexOf(begin);
   var lastChar = text.indexOf(end);
 
@@ -23,7 +20,7 @@ function betweenMarkers(text: string, begin: string, end: string): string {
   if (firstChar == -1) {
     firstChar = 0;
 
-  //Otherwise firstChar should start from the last character of "begin: string". Example <title>
+    //Otherwise firstChar should start from the last character of "begin: string". Example <title>
   } else {
     firstChar += begin.length;
   }
@@ -39,13 +36,18 @@ function betweenMarkers(text: string, begin: string, end: string): string {
   }
   var newText = text.substring(firstChar, lastChar);
   return newText;
-
 }
 
-console.log(betweenMarkers('MyLongString:StringIWant;', ':', ';'));
-console.log(betweenMarkers('My cow always gives milk', 'cow ', ' milk'));
-console.log(betweenMarkers('What is >apple<', '>', '<'));
-console.log(betweenMarkers("<head><title>My new site</title></head>", "<title>", "</title>"));
-console.log(betweenMarkers('Nooo[/b] hi', '[b]', '[/b]'));
-console.log(betweenMarkers('No result [b]hi', '[b]', '[/b]'));
-console.log(betweenMarkers('No <bye>', '>', '<'));
+console.log(betweenMarkers("MyLongString:StringIWant;", ":", ";"));
+console.log(betweenMarkers("My cow always gives milk", "cow ", " milk"));
+console.log(betweenMarkers("What is >apple<", ">", "<"));
+console.log(
+  betweenMarkers(
+    "<head><title>My new site</title></head>",
+    "<title>",
+    "</title>"
+  )
+);
+console.log(betweenMarkers("Nooo[/b] hi", "[b]", "[/b]"));
+console.log(betweenMarkers("No result [b]hi", "[b]", "[/b]"));
+console.log(betweenMarkers("No <bye>", ">", "<"));
