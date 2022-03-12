@@ -3,7 +3,7 @@
 // Output: An array of strings.
 
 //match() in its simplest form doesnt yield any relevant results.
-//But when it's used with REGEXP it starts becoming powerful tool which edits the array with a particular pattern
+//But when it's used with REGEXP it starts becoming powerful tool which edits the array to a particular pattern
 
 function splitPairs(text: string): string[] {
   return (text + "_").match(/(..)/g) || [];

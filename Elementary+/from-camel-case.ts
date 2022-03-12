@@ -5,7 +5,7 @@
 // Output: The same string, but in under_score.
 
 function fromCamelCase(name: string): string {
-    var underscoreversion = name.split(/(?=[A-Z])/).join(" ").toLowerCase().replace(/ /g, "_");
+    var underscoreversion = name.split(/(?=[A-Z])/).join("").toLowerCase().replace(/ /g, "_");
     // console.log(underscoreversion);
     return underscoreversion;
 }

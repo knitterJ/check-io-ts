@@ -9,7 +9,7 @@
 function longRepeat(line: string): number {
 
   var nicearr = line.match(/(.)\1*/g);
-  // console.log(nicearr);
+  console.log(nicearr);
   var longest = nicearr.sort(function (a, b) {return b.length - a.length})[0];
   // console.log(longest);
   return longest.length;

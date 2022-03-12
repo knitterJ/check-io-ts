@@ -17,7 +17,7 @@ function commonWords(line1: string, line2: string): string {
       }
     }
   }
-  // console.log(fresh);
+  console.log(fresh);
 
   return fresh.filter((elem) => elem !== undefined).sort().toString();
 }

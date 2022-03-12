@@ -22,6 +22,7 @@ function follow(instructions: string): [number, number] {
           firstCor+=1;
         } else if(instructions[i] == "l"){
           firstCor+=-1;
+
           }
     }
     return [firstCor, secondCor];
