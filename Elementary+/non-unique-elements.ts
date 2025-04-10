@@ -1,7 +1,9 @@
-// You are given a non-empty list of integers (X). For this task, you should return a list consisting of only the non-unique elements in this list. To do so you will need to remove all unique elements (elements which are contained in a given list only once). When solving this task, do not change the order of the list. Example: [1, 2, 3, 1, 3] 1 and 3 non-unique elements and result will be [1, 3, 1, 3].
+//  You are given a non-empty sequence of integers.
+// For this task, you should return Array consisting of only the non-unique elements from the initial sequence.
+// To do so you will need to remove all unique elements (elements which are contained in a given sequence only once).
+// When solving this task, do not change the order of the elements.
+// Example: in [1, 2, 3, 1, 3] elements 1, 3 are non-unique and result will be [1, 3, 1, 3].
 
-// Input: A list of integers.
-// Output: An iterable of integers.
 
 function nonUniqueElements(data){
     var count = data.reduce((o,v)=>{
