@@ -10,11 +10,11 @@ function frequencySort<T extends number | string>(items: T[]): T[] {
 
     for(const item of items){
 
-      console.log(FirstFrequecyMap.set(item, FirstFrequecyMap.get(item) + 1 || 0));
-    };
-
     return [];
 }
+
+// first stage done!
+// Tomorrow rewrite the code again, how to build the counter (value pair in the map) is very sophisticated
 
 console.log(frequencySort([1, 2, 3, 1, 3]));
 console.log(frequencySort([1, 2, 3, 4, 5]));
