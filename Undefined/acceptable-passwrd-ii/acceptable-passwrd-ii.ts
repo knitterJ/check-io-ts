@@ -1,7 +1,7 @@
 // This function should take two positive numbers
 // (length and width) as inputs and return the perimeter of a rectangle.
 
-function isAcceptablePassword(password: string): boolean {
+function isAcceptablePasswordII(password: string): boolean {
 
          // Direct property access (.length) and a simple comparison are generally much faster than creating and executing a regex.
          // Regular expressions involve more overhead for pattern matching.
@@ -21,7 +21,7 @@ function isAcceptablePassword(password: string): boolean {
 }
 
 
-console.log(isAcceptablePassword("short"));
-console.log(isAcceptablePassword("muchlonger"));
-console.log(isAcceptablePassword("abcdefg8"));
-console.log(isAcceptablePassword("123452428"));
+console.log(isAcceptablePasswordII("short"));
+console.log(isAcceptablePasswordII("muchlonger"));
+console.log(isAcceptablePasswordII("abcdefg8"));
+console.log(isAcceptablePasswordII("123452428"));

@@ -8,7 +8,7 @@
 // -   having numbers or containing just numbers does not apply to the password longer than 9;
 // -   a string should not contain the word "password" in any case.
 
-function isAcceptablePassword(password: string): boolean {
+function isAcceptablePasswordV(password: string): boolean {
         const hasCorrectLength = password.length > 6;
         let containsDigit = ['0','1','2','3','4','5','6','7','8','9'].some(digit => password.includes(digit));
         let atLeastOneChar = /\D/.test(password);
@@ -20,6 +20,6 @@ function isAcceptablePassword(password: string): boolean {
 }
 
 
-console.log(isAcceptablePassword("short"));
-console.log(isAcceptablePassword("password12345"));
-console.log(isAcceptablePassword("pas111sword12345"));
+console.log(isAcceptablePasswordV("short"));
+console.log(isAcceptablePasswordV("password12345"));
+console.log(isAcceptablePasswordV("pas111sword12345"));
