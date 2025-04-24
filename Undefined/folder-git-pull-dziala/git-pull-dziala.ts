@@ -1,1 +1,2 @@
-//działa 
+//działa
+//czy nie działa? ?? 
